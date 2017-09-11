@@ -1,0 +1,22 @@
+<h1>Electronic calculator</h1>
+<input type="text" name="" id="" [(ngModel)]='currentValue'>
+<div class="buttons-block">
+    <button (click)='allClear()'>AC</button>
+    <button (click)='currentClear()'>CE</button>
+    <button>/</button>
+    <button>*</button>
+    <button (click)='addValue(7)'>7</button>
+    <button (click)='addValue(8)'>8</button>
+    <button (click)='addValue(9)'>9</button>
+    <button>-</button>
+    <button (click)='addValue(4)'>4</button>
+    <button (click)='addValue(5)'>5</button>
+    <button (click)='addValue(6)'>6</button>
+    <button>+</button>
+    <button (click)='addValue(1)'>1</button>
+    <button (click)='addValue(2)'>2</button>
+    <button (click)='addValue(3)'>3</button>
+    <button>=</button>
+    <button (click)='addValue(0)'>0</button>
+    <button (click)='addValue(.)'>.</button>
+</div>
