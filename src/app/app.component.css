@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+h4,
+p,
+label,
+button {
+    font-family: 'Orbitron', sans-serif;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #2B3443;
+}
+
+.wrapper {
+    padding-top: 60px;
+}
+
+.calc-box {
+    background: #E8E9EB;
+    border: 2px solid #908b85;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 328px;
+    height: 510px;
+    overflow-y: hidden;
+    -webkit-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
+}
+
+.diplay-block {
+    border: 2px solid #b4b39d;
+    background-color: #CCCCCC;
+    border-radius: 3px;
+    width: 256px;
+    margin-left: 30px;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+}
+
+.main-row {
+    font-size: 30px;
+}
+
+.diplay-block small {
+    color: #97967E;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttons-block {
+    padding: 10px 15px 20px 25px;
+    display: block;
+}
+
+.buttons-block button {
+    width: 60px;
+    height: 60px;
+    margin: 5px 5px 5px 5px;
+    color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    border: 0;
+    box-shadow: inset 0px -12px 7px -10px rgba(43, 62, 71, 1), 1px 6px 7px -1px rgba(43, 62, 71, 1);
+}
+
+button {
+    background-color: #466675;
+    float: left;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+button:hover {
+    background-color: #2F4B58;
+}
+
+.btn-red {
+    background-color: #c13636;
+    float: left;
+    box-shadow: inset 0px -12px 7px -10px rgba(128, 35, 35, 1), 1px 6px 7px -1px rgba(128, 35, 35, 1);
+}
+
+.btn-zero {
+    margin-top: -60px;
+    width: 130px !important;
+    float: left;
+}
+
+.btn-eq {
+    margin-right: 13px !important;
+    height: 130px !important;
+    float: right;
+}
+
+.btn-eq:active {
+    position: relative;
+    top: 1px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-red:hover {
+    background-color: #7E2121;
+}

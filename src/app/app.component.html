@@ -1,22 +1,29 @@
-<h1>Electronic calculator</h1>
-<input type="text" name="" id="" [(ngModel)]='currentValue'>
-<div class="buttons-block">
-    <button (click)='allClear()'>AC</button>
-    <button (click)='currentClear()'>CE</button>
-    <button>/</button>
-    <button>*</button>
-    <button (click)='addValue(7)'>7</button>
-    <button (click)='addValue(8)'>8</button>
-    <button (click)='addValue(9)'>9</button>
-    <button>-</button>
-    <button (click)='addValue(4)'>4</button>
-    <button (click)='addValue(5)'>5</button>
-    <button (click)='addValue(6)'>6</button>
-    <button>+</button>
-    <button (click)='addValue(1)'>1</button>
-    <button (click)='addValue(2)'>2</button>
-    <button (click)='addValue(3)'>3</button>
-    <button>=</button>
-    <button (click)='addValue(0)'>0</button>
-    <button (click)='addValue(.)'>.</button>
+<div class="wrapper">
+    <div class="calc-box">
+        <h4>Electronic calculator</h4>
+        <div class="diplay-block">
+            <p class="main-row">{{currentValue}}</p>
+            <p><small>{{stateString}}</small></p>
+        </div>
+        <div class="buttons-block">
+            <button class="btn-red" (click)='allClear()'>AC</button>
+            <button class="btn-red" (click)='currentClear()'>CE</button>
+            <button class="btn-base" (click)='callOperator("/")'>/</button>
+            <button class="btn-base" (click)='callOperator("*")'>*</button>
+            <button class="btn-base" (click)='addValue("7")'>7</button>
+            <button class="btn-base" (click)='addValue("8")'>8</button>
+            <button class="btn-base" (click)='addValue("9")'>9</button>
+            <button class="btn-base" (click)='callOperator("-")'>-</button>
+            <button class="btn-base" (click)='addValue("4")'>4</button>
+            <button class="btn-base" (click)='addValue("5")'>5</button>
+            <button class="btn-base" (click)='addValue("6")'>6</button>
+            <button class="btn-base" (click)='callOperator("+")'>+</button>
+            <button class="btn-base" (click)='addValue("1")'>1</button>
+            <button class="btn-base" (click)='addValue("2")'>2</button>
+            <button class="btn-base" (click)='addValue("3")'>3</button>
+            <button class="btn-base btn-eq" (click)='callOperator("=")'>=</button>
+            <button class="btn-base btn-zero" (click)='addValue("0")'>0</button>
+            <button class="btn-base" (click)='addValue(".")'>.</button>
+        </div>
+    </div>
 </div>
