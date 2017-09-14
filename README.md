@@ -1,5 +1,9 @@
 # AngularCalc
 
+Calculator app with Angular CLI
+
+Demo: https://Cl3r1k.github.io/angular-calc/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
 ## Development server
