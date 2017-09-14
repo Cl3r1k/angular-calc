@@ -2,8 +2,6 @@
 import { Component } from '@angular/core';
 
 // TODO:
-// Write unit tests
-// Deploy on github and gh-pages
 // Deploy on codepen
 
 @Component({
@@ -15,7 +13,6 @@ export class AppComponent {
 
     currentValue = '0';
     stateString = '0';
-    prevOp = '';
     equalPressed = false;
 
     regExpOp = /[\/\*\-\+]/;
@@ -56,6 +53,10 @@ export class AppComponent {
 
             if (this.regExpNumAndDot.test(this.currentValue + val) || this.regExpNumAndDotAndNum.test(this.currentValue + val)) {
                 this.currentValue += val;
+            } else {
+                if (val === '.') {
+                    val = '';
+                }
             }
         }
 
