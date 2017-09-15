@@ -1,9 +1,6 @@
 // C:\Windows\System32\cmd.exe /k "C:\Program Files\nodejs\nodevars.bat" // To start from VSC terminal node env
 import { Component } from '@angular/core';
 
-// TODO:
-// Deploy on codepen
-
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
